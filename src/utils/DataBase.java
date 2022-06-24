@@ -5,12 +5,8 @@ public class DataBase {
     private Double[] y;
 
     public DataBase() {
-
-    }
-
-    public DataBase(int x, int y) {
-        this.x = new Double[x];
-        this.y = new Double[y];
+        this.x = new Double[28];
+        this.y = new Double[8];
     }
 
     public DataBase(Double[] x, Double[] y) {

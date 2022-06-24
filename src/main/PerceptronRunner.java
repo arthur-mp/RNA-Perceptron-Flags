@@ -1,19 +1,15 @@
 package main;
 
 import utils.DataBase;
-import utils.GenerateDataBase;
+import utils.GenerateDataBaseFlags;
 
 public class PerceptronRunner {
 
     public static void main(String[] args) throws Exception {
 
-        GenerateDataBase generateDataBase = new GenerateDataBase();
+        GenerateDataBaseFlags generateDataBase = new GenerateDataBaseFlags();
 
-        /*
-         * Enter file name
-         * Files are in 'Date'
-         */
-        DataBase[] dataBase = generateDataBase.generateDataBase("and");
+        DataBase[] dataBase = generateDataBase.generateDataBase();
 
         Perceptron p = new Perceptron(dataBase[0].getX().length, dataBase[0].getY().length, 0.1);
 
